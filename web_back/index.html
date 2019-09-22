@@ -156,6 +156,7 @@
       $('#btnLogout').click(function() {
         // todos:用模态框来代替
         if (window.confirm('确定要退出吗？')) {
+
           user.logout(function(res) {
             if (res.code == 200) {
               window.location.href = './login.html';
